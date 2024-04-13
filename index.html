@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG de Livros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ONG de Livros</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre a ONG</h2>
+            <p>Promovendo o Acesso à Leitura
+
+                A ONG de Livros é uma organização dedicada a promover o acesso à leitura e a incentivar a paixão pelos
+                livros em comunidades carentes. Nosso objetivo é proporcionar oportunidades educacionais e culturais,
+                além de promover o desenvolvimento pessoal e social por meio da leitura.</p>
+        </section>
+
+        <section id="projetos">
+            <h2>Nossos Projetos</h2>
+            <p>Biblioteca Comunitária: Mantemos uma biblioteca comunitária aberta a todos os membros da comunidade,
+                oferecendo um espaço acolhedor para leitura, estudo e atividades culturais.
+
+                Doação de Livros: Realizamos campanhas de arrecadação de livros para distribuir em escolas, creches,
+                abrigos e comunidades carentes, promovendo o acesso à leitura para crianças e adultos.
+
+                Oficinas de Leitura: Organizamos oficinas e eventos de leitura, contação de histórias e atividades
+                relacionadas ao universo literário, incentivando o gosto pela leitura desde a infância.
+
+                Programa de Alfabetização: Desenvolvemos programas de alfabetização e incentivo à leitura para adultos,
+                visando combater o analfabetismo e promover a inclusão social e educacional.
+
+                Campanhas de Conscientização: Realizamos campanhas de conscientização sobre a importância da leitura e
+                seus benefícios para o desenvolvimento pessoal e social, envolvendo a comunidade em nossas iniciativas.
+
+                Junte-se a nós nessa jornada de transformação através dos livros!</p>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Telefone: (XX) XXXX-XXXX<br>
+                E-mail: contato@ongdelivros.org<br>
+                Endereço: Rua das Letras, nº 123 - Cidade dos Livros, Estado</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ONG de Livros</p>
+    </footer>
+
+    <script>
+        // Scroll suave ao clicar nos links do menu
+        document.querySelectorAll('header nav ul li a').forEach(item => {
+            item.addEventListener('click', e => {
+                e.preventDefault();
+                const sectionId = e.target.getAttribute('href');
+                document.querySelector(sectionId).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
